@@ -1,0 +1,35 @@
+//Margin Center
+$margin-center:0 auto;
+
+//Margins
+$margin-right:20px;
+$margin:0;
+$margin-bottom:50px;
+
+// Colors
+$brand-color-pk:#de2c54;
+$brand-color-bl: #051238;
+$brand-color-yel:#fdc60b;
+$border: 7px solid #fdc60b;
+
+//Padding
+$padding-default: 20px;
+$padding-right:15px;
+$padding-left:0;
+
+//Circles
+$circle:20px;
+
+// Text Colors
+$text-color-dark: #051238;
+$text-color-light: white;
+
+// Media Query Breakpoints
+$desktopMedium: em(1250);
+$tabletLandscape: em(1024);
+$tabletPortrait: em(850);
+$phoneLandscape: em(670);
+$phonePortrait: em(420);
+
+// Utility variables
+$link-hover-selector: '&:hover, &:focus, &:active';

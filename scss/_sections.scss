@@ -1,0 +1,429 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* PORTFOLIO */
+
+/* intro */
+
+.blurb {
+    margin:0 auto;
+    text-align:center; 
+    padding-bottom:60px;
+    border-bottom: 1px solid $brand-color-bl;
+
+    
+}
+
+.blurb h2 {
+    color: $brand-color-pk;
+    font-size: $section-heading;
+    margin-top: 45px;
+}
+
+.line {
+    border-bottom: $border;
+    width:100px;
+    margin: $margin-center;
+}
+
+.blurb p {
+    margin:10px;
+    color:$brand-color-bl;
+    padding: 30px 350px;
+    font-size: 18px;
+
+    @media (max-width: 1223px){
+        max-width:75%;
+        padding:30px;
+        margin:0 auto;
+    }
+    
+}
+
+/* work */
+
+.portfolio{
+    padding:30px 60px;
+    border-bottom: 1px solid $brand-color-bl;
+}
+
+.skills-general {
+    display:flex;
+    margin-left:60px;
+}
+
+.skills-general p {
+    margin-right:$margin-right;
+    font-family: $headers-font;
+    font-weight: $bold;
+    background-color: $brand-color-yel;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size:14px;
+}
+
+
+.port-container {
+    display: flex;
+    padding-left: 60px;
+    margin: 40px 0px;
+
+   
+
+    @media (max-width: 1131px){
+        flex-wrap: wrap;
+        margin:0 auto;
+        text-align: center;
+
+    }
+}
+
+
+.box {
+    // width:600px;
+    // height:340px;
+    width:50%;
+    height:50%;
+
+    @media (max-width: 1131px){
+        margin:0 auto;
+        width:100%;
+    }
+
+}
+.port-description {
+    margin-top: 20px;
+    // margin-left:50px;
+    width:600px;
+
+    .port-item-title {
+        color:$brand-color-pk;
+        font:30px;
+        font-weight: $bold;
+    }
+}
+
+.port-description-01 {
+    margin-top:20px;
+    margin-left: 50px;
+    width:600px;
+
+    .port-item-title {
+        color:$brand-color-pk;
+        font-size:33px;
+        font-weight: $bold;
+    }
+}
+
+.description {
+    margin-bottom: 35px;
+}
+.btn-01 {
+    border-radius: 20px;
+    background-color: $brand-color-yel;
+    padding:10px 15px;
+    text-decoration: none;
+    outline: none;
+    font-weight: $bold;
+    font-family: $headers-font;
+    font-size:14px;
+    color:$brand-color-bl;
+    
+}
+
+.btn-01 a:hover, 
+.btn-01 a:focus, 
+.btn-01 a:visited {
+    color:$brand-color-pk;
+}
+  
+  .about-pic-figure {
+    margin: 0;
+    height: calc(100vh - 15px);
+  }
+  
+  .about-pic.fixed .about-pic-figure {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    width: calc(50% - 15px);
+  }
+  
+  .about-pic.absolute .about-pic-figure {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .about-pic img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+// ABOUT
+.about-section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+    // @media (max-width: 1223px){
+    //     max-width:100%;
+    //     margin:0 auto;
+    //     grid-template-columns: 1fr;
+    //     display: block;
+    // }
+}
+.about-title {
+    color:$brand-color-pk;
+    font-size: $section-heading;
+}
+
+.about-pic {
+    height: 100%;
+    position: relative;
+}
+
+.about-pic-figure {
+    margin: 0;
+    height: 100vh;
+}
+
+.about-pic.fixed .about-pic-figure {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+  }
+  
+.about-pic.absolute .about-pic-figure {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+  
+.about-pic img {
+display: block;
+height: 100%;
+width: 100%;
+object-fit: cover;
+object-position: top center;
+
+}
+
+.aboutme {
+    margin:0;
+    padding:0;
+    padding-right:60px;
+    margin: 20px 40px;
+    flex: 0 0 auto;
+}
+
+.about-description {
+    color:$brand-color-bl;
+    font-size: 17px;
+    padding-bottom:20px;
+}
+
+.extra-stuff {
+    display: flex;
+}
+
+.line1 {
+    border-bottom: $border;
+    width:100px;
+    margin: 30px 0px;
+}
+
+
+//skills
+.skills-section {
+    background-color: $brand-color-bl;
+    color:white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom:5px;
+    width:100%;
+}
+
+.design-skills {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills-heading {
+    font-size:25px;
+}
+
+.skills-section h3, h4{
+    color:$brand-color-yel;
+}
+.skill-title p {
+    margin-bottom:30px;
+    padding:0px 20px;
+}
+
+//awards
+.awards-info {
+    background-color: $brand-color-bl;
+    color:white;
+    text-align:center;
+    margin-right:5px;
+    padding:$padding-default;
+    width:100%;
+    font-family: $body-font;
+
+}
+
+.awards-info ul {
+    list-style: none;
+    text-decoration: none;
+    padding:0;
+}
+.awards-title {
+    color:$brand-color-yel;
+    font-size:25px;
+}
+
+//collab
+.collab-info {
+    background-color: $brand-color-bl;
+    color:white;
+    text-align:center;
+    padding:$padding-default;
+    width:100%;
+    font-family: $body-font;
+    margin:$margin-center;
+
+}
+
+.collab-info ul {
+    list-style: none;
+    text-decoration: none;
+    padding:0;
+}
+.collab-title {
+    color:$brand-color-yel;
+    font-size:25px;
+}
+
+//CONTACT
+.contact {
+    margin:0 auto;
+    padding:20px 10px;
+}
+.contact h2 {
+    color:$brand-color-pk;
+    font-size: $section-heading;
+    text-align: center;
+    padding:20px;
+    margin:0;
+}
+
+.contact p {
+    padding:10px 300px;
+    text-align: center;
+
+    @media (max-width: 995px){
+        max-width:75%;
+        padding:30px;
+        margin:0 auto;
+    }
+}
+.line2 {
+    border-bottom: $border;
+    width:100px;
+    margin: $margin-center;
+}
+
+ //Top Button
+ .arrow {
+    position:fixed;
+    bottom: 75px;
+    right: 30px;
+    text-decoration: none;
+    color:white;
+    background-color: $brand-color-bl;
+    font-size: .8em;
+    padding: 15px;
+    letter-spacing: 1px;
+    display:none;
+    text-transform: uppercase;
+    font-family: $body-font;
+
+    @media (max-width: 343px){
+        visibility: hidden;
+    }
+
+}
+
+//FORM
+form {
+    font-family: $body-font;
+    color:$brand-color-bl;
+    margin: 0px 140px;
+    padding:0px 150px;
+
+    @media (max-width: 1061px){
+        max-width:75%;
+        padding:10px;
+        margin:0 auto;
+    }
+}
+
+ input {
+     width:440px;
+     padding:13px;
+     border:1px solid $brand-color-bl;
+     margin:10px 10px 15px 0px; //top, right, bottom, left
+     
+     @media (max-width: 561px){
+        max-width:100%;
+        margin:0 auto;
+    }
+ }
+
+ input:last-child {
+     width:100px;
+     border-radius: $circle;
+     border:none;
+    background-color: $brand-color-yel;
+    padding:10px;
+    text-decoration: none;
+    outline: none;
+    font-weight: $bold;
+    font-family: $headers-font;
+    font-size:14px;
+    cursor: pointer;
+ }
+
+ label {
+     font-weight: $bold;
+ }
+
+ textarea {
+    width: 100%;
+    height: 200px;
+    padding:13px;
+    border:1px solid $brand-color-bl;
+    margin:10px 5px 15px 0px;
+ }
+
+ .contact a {
+     text-decoration: none;
+     outline: none;
+     color:$brand-color-bl;
+     font-size:18px;
+ }
+ .contact a:hover,
+ .contact a:focus,
+ .contact a:active {
+    color: $brand-color-pk;
+ }
+ 
+ 
+
+//USE SMARTMOCKUPS FOR MOCKUPS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

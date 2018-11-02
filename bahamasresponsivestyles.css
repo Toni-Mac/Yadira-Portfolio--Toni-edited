@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* box-sizing reset */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /* end box-sizing reset */
+
+  /*image reset*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+ 
+body {
+    background-image: url('./images/bahamas-paradise.jpg');
+    background-repeat: no-repeat;
+    margin:0;
+    background-position: center;
+    font-family:'Century Gothic';
+    height:100%;
+  }
+
+.nav-row {
+    display:flex;
+    justify-content: space-between;
+
+}
+.wrapper {
+    margin:0 auto;
+
+}
+
+header {
+    background-color:white;
+    color: black;
+
+}
+
+header a {
+    color:black;
+    text-decoration: none;
+}
+
+header .nav-row {
+    justify-content: flex-start;
+    align-items:center;
+    padding:12px;
+}
+
+.logo {
+    display: block;
+    margin-left:15px;
+    margin-right:auto;
+}
+
+.logo img {
+    display: block;
+
+}
+
+.hamburger-menu {
+    display:none;
+    border-radius:10px;
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    align-self:center;
+    float:right;
+
+}
+
+.hamburger-menu:focus,
+.hamburger-menu-content:focus {
+    outline: none;
+}
+
+.hamburger-menu:focus .hamburger-menu-content {
+    outline: 5px solid #7683C9;
+}
+
+.hamburger-menu-content {
+    display: block;
+    height:24px;
+
+}
+
+.bar,
+.bar:after,
+.bar:before {
+    width:40px;
+    height:4px;
+    border-radius: 10px;
+}
+
+.bar {
+    position: relative;
+    top: 5px;
+    transform: translateY(5px);
+    background: #111111;
+    transition: all 0ms 300ms;
+    border-radius: 10px;
+    display: block; 
+}
+    
+.bar.animate {
+    background: rgba(17, 17, 17, 0); 
+}
+  
+.bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background: #111111;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  
+.bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: #111111;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  
+.bar.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 1; 
+}
+  
+.bar.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  
+.hamburger-menu .bar.animate {
+    background: transparent !important; }
+  
+.hamburger-menu .bar.animate:before, .hamburger-menu .bar.animate:after {
+    background: #111111; 
+
+}
+
+header nav {
+    margin-right: 40px;
+
+}
+
+header nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    display: flex;
+}
+
+header nav li {
+    flex:1;
+}
+
+header nav a {
+    line-height: 41px;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-right: 1px dotted white;
+    white-space:nowrap;
+    margin:20px;
+}
+
+
+.main-content {
+    margin-top:500px;
+    margin-left:50px;
+}
+.main-content h1 {
+
+    width:400px;
+    font-size: 60px;
+    line-height: 60px;
+    color:white;
+    margin-bottom:0;
+}
+
+.cta-btn {
+    display: block;
+    font-size:30px;
+    text-align:center;
+    font-weight:bold;
+    background-color:white;
+    width: 200px;
+    height:50px;
+    padding:5px;
+    margin-left:1px;
+    color: black;
+}
+
+.cta-btn:hover, .cta-btn:focus {
+    color: black;
+    background-color:#ffc70f;
+}
+
+.main-content h2 a {
+    text-decoration: none;
+}
+
+header nav a:focus,
+header nav a:hover,
+.pg-historyandculture .historyandculture,
+.pg-cuisine .cuisine, .pg-thingstodo .thingstodo {
+    outline: none;
+    color: #ffc70f;
+}
+
+@media only screen and (max-width: 750px) {
+    .nav-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .hamburger-menu {
+        display:block;
+        background-color: #fff;
+    }
+
+    header nav {
+        display: none;
+        width:100%;
+        background-color: white;
+
+    }
+
+    .show nav {
+        height:auto;
+
+    }
+
+    .show header nav {
+        display: block;
+    }
+
+    nav ul {
+        display:block;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    nav a {
+        line-height:45px;
+    }
+
+    .logo {
+        max-width:100%;
+   
+    }
+
+    .main-content h1{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .main-content {
+        width: 100%;
+        margin-left:0;
+        padding:20px;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .main-content h1 {
+        white-space: normal;
+        width:100%;
+        margin:0 auto;
+    }
+    
+
+}
