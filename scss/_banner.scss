@@ -16,6 +16,11 @@
     flex: 0 0 auto;
     padding: 10px 0;
 }
+@media only screen and (max-width: 600px){
+    .banner-side-bar{
+        display: none;
+    }
+}
 
 .side-bar-logo {
     width: 75px;
