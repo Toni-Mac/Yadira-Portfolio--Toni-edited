@@ -57,6 +57,9 @@ img {
   top: 240px;
   left: 0;
   z-index: 900; }
+  @media only screen and (max-width: 600px) {
+    .side-bar-nav {
+      display: none; } }
 
 .side-bar-nav ul {
   list-style: none;
@@ -331,21 +334,28 @@ img {
 
 .port-container {
   display: flex;
-  padding-left: 60px;
-  margin: 40px 0px; }
-  @media (max-width: 1131px) {
+  margin: 40px 0px;
+  min-height: 435px;
+  align-items: center;
+  padding: 10px; }
+  @media (max-width: 800px) {
     .port-container {
       flex-wrap: wrap;
       margin: 0 auto;
       text-align: center; } }
 
+@media only screen and (max-width: 800px) {
+  #reverse {
+    flex-direction: column-reverse; } }
+@media only screen and (max-width: 500px) {
+  .port-container .port-description {
+    margin: auto; } }
 .box {
   width: 50%;
   height: 50%; }
   @media (max-width: 1131px) {
     .box {
-      margin: 0 auto;
-      width: 100%; } }
+      margin: 10px auto; } }
 
 .port-description {
   margin-top: 20px;
@@ -356,8 +366,6 @@ img {
     font-weight: bold; }
 
 .port-description-01 {
-  margin-top: 20px;
-  margin-left: 50px;
   width: 600px; }
   .port-description-01 .port-item-title {
     color: #de2c54;
@@ -386,6 +394,9 @@ img {
 .about-pic-figure {
   margin: 0;
   height: calc(100vh - 15px); }
+  @media only screen and (max-width: 600px) {
+    .about-pic-figure {
+      display: none; } }
 
 .about-pic.fixed .about-pic-figure {
   position: fixed;
@@ -409,6 +420,9 @@ img {
 .about-section {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  @media only screen and (max-width: 600px) {
+    .about-section {
+      display: flex; } }
 
 .about-title {
   color: #de2c54;
@@ -682,6 +696,11 @@ footer a {
   @media (max-width: 375px) {
     .nav-section .nav-bottom .bottom-nav a {
       font-size: 1em; } }
+.nav-section .footer-nav {
+  display: flex; }
+.nav-section .nav-bottom {
+  display: flex;
+  flex-direction: column; }
 .nav-section .nav-bottom .bottom-nav a:hover,
 .nav-section .nav-bottom .bottom-nav a:focus,
 .nav-section .nav-bottom .bottom-nav a:active {
