@@ -37,7 +37,8 @@
 
 .nav-section {
     .nav-bottom {
-        height: 50px;
+        // height: 50px;
+        align-items: center;
 
         img {
             @media (max-width: 655px){
@@ -53,6 +54,7 @@
     .nav-bottom ul {
         list-style:none;
         display: flex; 
+        padding: 0;
         margin:0 auto; 
         font-family: $nav-font;  
         justify-content: flex-end;  
@@ -81,7 +83,6 @@
             padding:0px 7px;
             display:inline-block;
             margin:0 auto;
-
         }
 
         @media (max-width: 375px){

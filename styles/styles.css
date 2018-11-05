@@ -582,12 +582,12 @@ form {
   padding: 0px 150px; }
   @media (max-width: 1061px) {
     form {
-      max-width: 75%;
+      max-width: 55%;
       padding: 10px;
       margin: 0 auto; } }
 
 input {
-  width: 440px;
+  width: 100%;
   padding: 13px;
   border: 1px solid #051238;
   margin: 10px 10px 15px 0px; }
@@ -658,7 +658,7 @@ footer a {
       margin: 0 auto; } }
 
 .nav-section .nav-bottom {
-  height: 50px; }
+  align-items: center; }
   @media (max-width: 655px) {
     .nav-section .nav-bottom img {
       margin: 0 auto;
@@ -669,6 +669,7 @@ footer a {
 .nav-section .nav-bottom ul {
   list-style: none;
   display: flex;
+  padding: 0;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   justify-content: flex-end; }

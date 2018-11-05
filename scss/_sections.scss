@@ -182,12 +182,6 @@
     @media only screen and (max-width: 600px) {
         display: flex;
     }
-    // @media (max-width: 1223px){
-    //     max-width:100%;
-    //     margin:0 auto;
-    //     grid-template-columns: 1fr;
-    //     display: block;
-    // }
 }
 .about-title {
     color:$brand-color-pk;
@@ -209,7 +203,7 @@
     top: 0;
     left: 0;
     width: 50%;
-  }
+}
   
 .about-pic.absolute .about-pic-figure {
     position: absolute;
@@ -381,14 +375,14 @@ form {
     padding:0px 150px;
 
     @media (max-width: 1061px){
-        max-width:75%;
+        max-width:55%;
         padding:10px;
         margin:0 auto;
     }
 }
 
  input {
-     width:440px;
+     width:100%;
      padding:13px;
      border:1px solid $brand-color-bl;
      margin:10px 10px 15px 0px; //top, right, bottom, left
